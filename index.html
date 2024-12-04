@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="openWindow()">open window</button>
+    <button onclick="closeWindow()">close window</button>
+    <button onclick="moveWindow()">move window</button>
+    <script>
+       function moveWindow(){
+        myWindow.moveTo(100,100)
+        myWindow.focus();
+       }
+
+
+
+
+
+
+//open and close window
+    var myWindow;
+        function openWindow(){
+              myWindow= window.open("" ,"","width=500px,height=500px");
+              myWindow.document.write("<P>this is new window</p>")
+            }
+            function closeWindow(){
+                myWindow.close();
+            }
+
+
+
+// Inner/outer height
+        var iHeight = window.innerHeight;
+        console.log( "Inner Height :" + iHeight);
+
+
+        var oHeight =  window.outerHeight;
+        console.log( "Outer Height :" + oHeight);
+ // Inner/outer width 
+
+        var iWidth = window.innerWidth;
+        console.log( "Inner width :" + iWidth);
+        var oWidth =  window.outerWidth;
+        console.log( "Outer width :" + oWidth);
+ 
+
+    </script>
+</body>
+</html>
