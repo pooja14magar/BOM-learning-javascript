@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location-object</title>
+</head>
+<body>
+    <button onclick="newFunction()">click</button>
+    <button onclick="backFunction()">back</button>
+    <button onclick="forwardFunction()">forward</button>
+
+    <script>
+        function newFunction(){
+            location.href ="https://soundbox.sb.ubi.cwdin.com/login";
+        }
+        document.write(location.href)
+
+        function backFunction(){
+            history.back();
+        }
+
+        function forwardFunction(){
+            history.forward();
+        }
+    </script>
+</body>
+</html>

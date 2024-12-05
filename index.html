@@ -10,13 +10,16 @@
     <button onclick="openWindow()">open window</button>
     <button onclick="closeWindow()">close window</button>
     <button onclick="moveWindow()">move window</button>
+    <button onclick="resizeWindow()">Resize window</button>
     <script>
        function moveWindow(){
         myWindow.moveTo(100,100)
         myWindow.focus();
        }
 
-
+function resizeWindow(){
+    myWindow.resizeTo(400,400);
+}
 
 
 
